@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/expressao"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:layout_marginEnd="10dp"
+        android:gravity="end"
+        android:ellipsize="start"
+        android:singleLine="true"
+        android:text="3"
+        android:layout_marginRight="10dp" />
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:layout_marginEnd="10dp"
+        android:gravity="end"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:text="3"
+        android:layout_marginRight="10dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/limpar"
+            style="@style/Operators_Button"
+            android:text="c"/>
+
+        <Button
+            android:id="@+id/divisao"
+            style="@style/Operators_Button"
+            android:text="/"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/numero_sete"
+            style="@style/Numbers_Button"
+            android:text="@string/numero_sete"/>
+
+        <Button
+            android:id="@+id/numero_oito"
+            style="@style/Numbers_Button"
+            android:text="@string/numero_oito"/>
+        <Button
+            android:id="@+id/numero_nove"
+            style="@style/Numbers_Button"
+            android:text="@string/numero_nove"/>
+
+        <Button
+            android:id="@+id/multiplicacao"
+            style="@style/Operators_Button"
+            android:text="x"/>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/numero_quatro"
+            style="@style/Numbers_Button"
+            android:text="@string/numero_quatro"/>
+
+        <Button
+            android:id="@+id/numero_cinco"
+            style="@style/Numbers_Button"
+            android:text="@string/numero_cinco"/>
+        <Button
+            android:id="@+id/numero_seis"
+            style="@style/Numbers_Button"
+            android:text="@string/numero_seis"/>
+
+        <Button
+            android:id="@+id/subtracao"
+            style="@style/Operators_Button"
+            android:text="-"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/numero_um"
+            style="@style/Numbers_Button"
+            android:text="@string/numero_um"/>
+
+        <Button
+            android:id="@+id/numero_dois"
+            style="@style/Numbers_Button"
+            android:text="@string/numero_dois"/>
+        <Button
+            android:id="@+id/numero_tres"
+            style="@style/Numbers_Button"
+            android:text="@string/numero_tres"/>
+
+        <Button
+            android:id="@+id/adicao"
+            style="@style/Operators_Button"
+            android:text="+"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/ponto"
+            style="@style/Numbers_Button"
+            android:text="."/>
+
+        <Button
+            android:id="@+id/numero_zero"
+            style="@style/Numbers_Button"
+            android:text="0"/>
+        <Button
+            android:id="@+id/backspace"
+            style="@style/Numbers_Button"
+            android:text="back"/>
+
+        <Button
+            android:id="@+id/igual"
+            style="@style/Operators_Button"
+            android:text="="/>
+
+    </LinearLayout>
+</LinearLayout>
